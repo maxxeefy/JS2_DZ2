@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Составь свой бургер</h1>
+    <form>
+        <fieldset>
+            <h3>Выберете размер бургера</h3>
+            <p><input type="radio" name="size" value="big">Большой (100 рублей, 40 калорий)<br>
+                <input type="radio" name="size" value="small">Маленький (50 рублей, 20 калорий)</p>
+        </fieldset>
+        <div id="fill">
+            <fieldset>
+                <h3>Выберете начинку бургера</h3>
+                <p><input type="radio">С сыром (+10 рублей, +20 калорий)<br>
+                    <input type="radio">С салатом (+20 рублей, +5 калорий)<br>
+                    <input type="radio">С картофелем (+15 рублей, +10 калорий)</p>
+            </fieldset>
+            <fieldset>
+                <h3>Выберете дополнительно:</h3>
+                <p><input type="radio"> Посыпать приправой (+15 рублей, +0 калорий)<br>
+                    <input type="radio">полить майонезом (+20 рублей, +5 калорий)</p>
+            </fieldset>
+        </div>
+        <button id="btn" type="button">Собрать бургер</button>
+    </form>
+    <p>Стоимость бургера: <span id="cost"></span> </p>
+    <p>Калорийность бургера: <span id="calorie"></span></p>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
